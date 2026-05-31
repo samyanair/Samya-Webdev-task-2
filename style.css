@@ -1,0 +1,190 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    background-color:#e38555;
+    margin:30px;
+}
+
+/* Container */
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Content Boxes */
+.box{
+    background-color:rgb(148,16,16);
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Header Box */
+.header-box{
+    text-align:center;
+}
+
+/* Main Title */
+h1{
+    font-family:"Bungee Shade", sans-serif;
+    font-size:clamp(2rem,6vw,4rem);
+    color:#fff2e6;
+    margin-bottom:20px;
+}
+
+/* Subtitle */
+.subtitle{
+    font-family:"Bungee Shade", sans-serif;
+    font-size:clamp(1rem,3vw,1.8rem);
+    color:#fff2e6;
+    line-height:1.8;
+}
+
+/* Other Headings */
+h2{
+    font-family:"Proza Libre", sans-serif;
+    font-size:30px;
+    color:#fff2e6;
+    margin-bottom:12px;
+}
+
+/* Paragraphs, Lists, Tables, Links */
+p,
+li,
+td,
+th,
+a{
+    font-family:"Proza Libre", sans-serif;
+    font-size:18px;
+    color:#fff2e6;
+}
+
+/* Navigation Bar */
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    font-weight:bold;
+}
+
+/* About Section */
+.about-section{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:40px;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-section img{
+    width:250px;
+    height:auto;
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+/* Rio Picture */
+.photo-box{
+    text-align:center;
+}
+
+.photo-box img{
+    width:400px;
+    max-width:100%;
+    border-radius:12px;
+}
+.photo-box2{
+    text-align:center;
+}
+
+.photo-box2 img{
+    width:400px;
+    max-width:100%;
+    border-radius:12px;
+}
+/* Lists */
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table,
+th,
+td{
+    border:1px solid #fff2e6;
+}
+
+th,
+td{
+    padding:12px;
+    text-align:left;
+}
+
+/* Links */
+a{
+    text-decoration:underline;
+}
+
+a:hover{
+    opacity:0.8;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+}
+
+/* Responsive Design */
+@media (max-width:768px){
+
+    .about-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-section img{
+        width:200px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    p,
+    li,
+    td,
+    th,
+    a{
+        font-size:16px;
+    }
+}
+
